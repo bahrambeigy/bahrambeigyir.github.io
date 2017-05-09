@@ -29,3 +29,5 @@ github: bahrambeigy
 # Tracker
 #analytics: UA-83979019-1
 #Update all the sections by editing the files inside _includes folder.
+
+highlighter: rouge
