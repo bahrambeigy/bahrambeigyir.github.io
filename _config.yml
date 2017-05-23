@@ -1,33 +1,39 @@
+# Site settings
+title: Bahram Bahrambeigy
+description: Bahram's Delusions
+url: 'http://bahrambeigy.ir'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
 
-title: Bahram's CV
-url: 'http://www.bahrambeigy.ir'
-baseurl: '' #change it according to your repository name
+author:
+  name: 'Bahram Bahrambeigy'
+  email: bahram@bahrambeigy.ir
+#  twitter_username: joshgerdes
+#  facebook_username: joshgerdes
+  github_username:  bahrambeigy
+  linkedin_username:  bahrambeigy
 
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
-# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
-#style: styles-2
-#style: styles-3
-#style: styles-4
-#style: styles-5
-style: styles-6
-
-
-#Profile information
-name: Bahram Bahrambeigy
-tagline: SysAdmin & Backend Developer
-pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-#sidebar links
-email: bahram@bahrambeigy.ir
-#phone: 012 345 6789
-website: www.bahrambeigy.ir #do not add http://
-linkedin: bahrambeigy
-github: bahrambeigy
-#twitter: '@webjeda'
-
-
-# Tracker
-#analytics: UA-83979019-1
-#Update all the sections by editing the files inside _includes folder.
-
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'vendor']
