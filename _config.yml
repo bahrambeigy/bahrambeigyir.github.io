@@ -37,3 +37,6 @@ kramdown:
 
 gems: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'vendor']
+
+timezone: 'Asia/Tehran'
+future: true
