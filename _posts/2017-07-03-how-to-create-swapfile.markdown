@@ -5,7 +5,7 @@ tags: [swapfile, linux, ubuntu, manual]
 description: "How to create swapfile" 
 ---
 
-Swapfile comes readlly handy when you want to increase or change the size of your swap space. 
+Swapfile comes really handy when you want to increase or change the size of your swap space. 
 
 ### [Allocate](#allocate_swapfile):
 Using Ubuntu you can allocate your required space using user-friendly command as follows:
