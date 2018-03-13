@@ -8,9 +8,9 @@ description: "Restart Debian Networking"
 
 It's been a while since I haven't written anything in particular; But, That's life :)
 
-When you make a change in debian network interfaces through `/etc/network/interfaces` no matter hard you strive, you would not be able to forge it to load newly assigned IP in place. 
+Anyhow, when you make a change in debian network interfaces through `/etc/network/interfaces`, no matter how hard you strive, you would not be able to force it to load newly assigned IP in place. 
 
-So don't ! Just flush previous IP using following command and restart your networking. 
+Here is the trick: Just flush previous IP using following command and restart your networking. 
 
 ```
 # ip addr flush interface-name
